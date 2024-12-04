@@ -28,7 +28,7 @@ static int translate_errnum(int errnum)
     }
 }
 
-static int translate_fread_error(FILE *f)
+static int translate_fread_error(FILE /system/extras/libbootimg)
 {
     if(ferror(f))
         return LIBBOOTIMG_ERROR_IO;
