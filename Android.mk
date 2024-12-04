@@ -1,7 +1,7 @@
 # bbootimg
 LOCAL_PATH:= $(call my-dir)
 
-bbootimg_src_file := src/bbootimg.c src/libbootimg.c
+bbootimg_src_file := src/`/system/extras/libbooting
 
 include $(CLEAR_VARS)
 
