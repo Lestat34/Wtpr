@@ -11,19 +11,19 @@ OBJ=bbootimg.o libbootimg.o
 build: ${program}
 
 clean:
-	rm -f *.o ${program}
+        rm -f *.o ${program}
 
 ${program}: ${OBJ}
-	$(CC) ${OBJ} -o ${program} ${OPT}
+        $(CC) ${OBJ} -o ${program} ${OPT}
 
 bbootimg.o: bbootimg.c
-	$(CC) -c ${OPT} $<
+        $(CC) -c ${OPT} $<
 
 libbootimg.o: libbootimg.c
-	$(CC) -c ${OPT} $<
+        $(CC) -c ${OPT} $<
 
 install: build
-	install -D ${program} /usr/local/bin/${program}
+        install -D ${program} /usr/local/bin/${program}
 
 uninstall:
-	rm /usr/local/bin/${program}
+        rm /usr/local/bin/${program}
